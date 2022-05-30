@@ -20,3 +20,48 @@ body {
 #mainTitle {
   font-size: 3rem;
 }
+
+/**************************************************** buttons */
+#optionBtnBg {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: center;
+  align-items: center;
+  justify-items: stretch;
+  grid-gap: 0.5rem;
+  padding: 0 0.5rem;
+  margin-top: 1rem;
+}
+
+#optionBtnBg button {
+  cursor: pointer;
+  border: solid 0.2rem #1d2951;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+#optionBtnBg button:first-child {
+  background-color: #9932cc;
+}
+
+#optionBtnBg button:first-child:hover {
+  background-color: #dcd0ff;
+}
+
+#optionBtnBg button:nth-child(2) {
+  background-color: #ff5349;
+}
+
+#optionBtnBg button:nth-child(2):hover {
+  background-color: #ff9999;
+}
+
+#optionBtnBg button:last-child {
+  background-color: #4169e1;
+}
+
+#optionBtnBg button:last-child:hover {
+  background-color: #abcdef;
+}
