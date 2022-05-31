@@ -65,3 +65,9 @@ body {
 #optionBtnBg button:last-child:hover {
   background-color: #abcdef;
 }
+
+/**************************************************** images */
+#imgOptions figure img {
+  width: 14rem;
+  height: 10rem;
+}
