@@ -19,6 +19,7 @@ body {
 /**************************************************** title */
 #mainTitle {
   font-size: 3rem;
+  margin-top: 0.5rem;
 }
 
 /**************************************************** buttons */
@@ -66,7 +67,19 @@ body {
   background-color: #abcdef;
 }
 
+/**************************************************** para */
+.paraInstruction {
+  font-size: 3.5rem;
+  color: #1d2951;
+  font-weight: bold;
+  margin: 9rem auto;
+}
+
 /**************************************************** images */
+#wholePicGame {
+  display: none;
+}
+
 .imgOptions {
   margin-top: 2rem;
 }
@@ -78,7 +91,6 @@ body {
 }
 
 /**************************************************** divider */
-
 #divider {
   width: 100%;
   height: 1rem;
