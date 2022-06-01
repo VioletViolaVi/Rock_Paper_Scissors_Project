@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // from html
   const wholePicGame = document.getElementById("wholePicGame");
+  const paraText = document.getElementById("paraText");
   const rock = document.getElementById("rock");
   const paper = document.getElementById("paper");
   const scissors = document.getElementById("scissors");
@@ -12,18 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // selects btn individually
     optionArr.forEach((chosenBtn) => {
       chosenBtn.addEventListener("click", () => {
+        wholePicGame.style.display = "block";
+        paraText.style.display = "none";
         if (chosenBtn.id === "rock") {
           selectedImg.src = "images/rocks.avif";
           selectedImg.alt = "rock picture";
-          wholePicGame.style.display = "block";
         } else if (chosenBtn.id === "paper") {
           selectedImg.src = "images/paper.avif";
           selectedImg.alt = "paper picture";
-          wholePicGame.style.display = "block";
         } else if (chosenBtn.id === "scissors") {
           selectedImg.src = "images/scissors.avif";
           selectedImg.alt = "scissors picture";
-          wholePicGame.style.display = "block";
         }
       });
     });
