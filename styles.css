@@ -67,7 +67,12 @@ body {
 }
 
 /**************************************************** images */
+#imgOptions {
+  margin-top: 2rem;
+}
+
 #imgOptions figure img {
   width: 14rem;
   height: 10rem;
+  border: solid 0.3rem #1d2951;
 }
