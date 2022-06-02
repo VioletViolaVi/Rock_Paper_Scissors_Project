@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // selects btn individually
     optionArr.forEach((chosenBtn) => {
       chosenBtn.addEventListener("click", () => {
-        wholePicGame.style.display = "block"; // shows imgs
+        wholePicGame.style.display = "grid"; // shows imgs
         computerChoice(); // shows computer's choice
         paraText.style.display = "none";
         if (chosenBtn.id === "rock") {

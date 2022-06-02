@@ -22,6 +22,13 @@ body {
   margin-top: 0.5rem;
 }
 
+@media (min-width: 1250px) {
+  #mainTitle {
+    font-size: 4rem;
+    margin-top: 0rem;
+  }
+}
+
 /**************************************************** buttons */
 #optionBtnBg {
   display: grid;
@@ -67,12 +74,41 @@ body {
   background-color: #abcdef;
 }
 
+@media (min-width: 600px) {
+  #optionBtnBg button {
+    font-size: 2rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  #optionBtnBg {
+    margin-top: 0.5rem;
+  }
+
+  #optionBtnBg button {
+    font-size: 3rem;
+  }
+}
+
 /**************************************************** para text */
 .paraInstruction {
   font-size: 3.5rem;
   color: #1d2951;
   font-weight: bold;
   margin: 9rem auto;
+}
+
+@media (min-width: 600px) {
+  .paraInstruction {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  .paraInstruction {
+    font-size: 4.5rem;
+  }
 }
 
 /**************************************************** images */
@@ -90,10 +126,51 @@ body {
   border: solid 0.3rem #1d2951;
 }
 
+@media (min-width: 600px) {
+  .imgOptions figure img {
+    width: 20rem;
+    height: 13rem;
+  }
+}
+
+@media (min-width: 900px) {
+  #wholePicGame {
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    margin: 7rem auto;
+  }
+}
+
+@media (min-width: 1250px) {
+  .imgOptions figure img {
+    width: 30rem;
+    height: 20rem;
+  }
+
+  #wholePicGame {
+    margin: 4rem auto;
+  }
+}
+
 /**************************************************** divider */
 #divider {
   width: 100%;
   height: 1rem;
   border: solid 0.5rem #1d2951;
   margin-top: 2rem;
+}
+
+@media (min-width: 900px) {
+  #divider {
+    height: 20rem;
+    border-left: solid 0.1rem #1d2951;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  #divider {
+    height: 23rem;
+    margin-top: 1rem;
+  }
 }
