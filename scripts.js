@@ -33,8 +33,21 @@ document.addEventListener("DOMContentLoaded", () => {
   selectingOptions();
 
   function computerChoice() {
-    console.log("computer's choice");
+    const compImgOptions = [
+      "images/rocks.avif",
+      "images/paper.avif",
+      "images/scissors.avif",
+    ];
+    const compAltOptions = [
+      "rock picture",
+      "paper picture",
+      "scissors picture",
+    ];
+    const randNum = Math.floor(Math.random() * 3);
+    console.log(compImgOptions[randNum]);
+    console.log(compAltOptions[randNum]);
   }
+  computerChoice();
 });
 
 // may need while loop to cont. playing
