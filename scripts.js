@@ -32,26 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   selectingOptions();
 
+  // random choices for computer
   function computerChoice() {
-    const compImgOptions = [
-      "images/rocks.avif",
-      "images/paper.avif",
-      "images/scissors.avif",
-    ];
-    const compAltOptions = [
-      "rock picture",
-      "paper picture",
-      "scissors picture",
-    ];
+    const compSrc = ["images/rocks.avif", "images/paper.avif", "images/scissors.avif"];
+    const compAlt = ["rock picture", "paper picture", "scissors picture"];
     const randNum = Math.floor(Math.random() * 3);
-    console.log(compImgOptions[randNum]);
-    console.log(compAltOptions[randNum]);
+    const compSelectedImg = document.getElementById("compSelectedImg");
+
+    compSelectedImg.src = compSrc[randNum];
+    compSelectedImg.alt = compAlt[randNum];
   }
   computerChoice();
 });
 
 // may need while loop to cont. playing
 // have model appear to show score each time
-// randomise computer choices
 // modal for "you win" & "you lose"
 // - can include score if wanted
