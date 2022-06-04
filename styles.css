@@ -16,6 +16,36 @@ body {
   background-color: #e0ffff;
 }
 
+/**************************************************** modal */
+#modalBg {
+  background-color: rgba(0, 0, 0, 0.527);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+#modalInfo {
+  background-image: linear-gradient(to right, #00ffff, #00b7eb);
+  border: 0.2rem solid #00ffff;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+#modalInfo p {
+  font-size: 3rem;
+}
+
+#replayBtn {
+  font-size: 2em;
+  cursor: pointer;
+}
+
 /**************************************************** title */
 #mainTitle {
   font-size: 3rem;
