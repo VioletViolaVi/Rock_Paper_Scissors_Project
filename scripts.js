@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const compSelectedImg = document.getElementById("compSelectedImg");
   const optionArr = [rock, paper, scissors];
   const modalBg = document.getElementById("modalBg");
+  const resultsMessage = document.getElementById("resultsMessage");
 
   function selectingOptions() {
     // selects btn individually
@@ -38,6 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
   function toggleModal() {
     if (selectedImg.src === compSelectedImg.src) {
       modalBg.style.display = "grid";
+    } else {
+      modalBg.style.display = "grid";
+      resultsMessage.innerText = "You Lost!";
     }
   }
 
