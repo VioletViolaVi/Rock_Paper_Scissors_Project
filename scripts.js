@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // from html
   const wholePicGame = document.getElementById("wholePicGame");
   const paraText = document.getElementById("paraText");
-
   const rock = document.getElementById("rock");
   const paper = document.getElementById("paper");
   const scissors = document.getElementById("scissors");
   const selectedImg = document.getElementById("selectedImg");
-
+  const compSelectedImg = document.getElementById("compSelectedImg");
   const optionArr = [rock, paper, scissors];
+  const modalBg = document.getElementById("modalBg");
 
   function selectingOptions() {
     // selects btn individually
@@ -27,17 +27,29 @@ document.addEventListener("DOMContentLoaded", () => {
           selectedImg.src = "images/scissors.avif";
           selectedImg.alt = "scissors picture";
         }
+        setTimeout(() => {
+          toggleModal();
+        }, 100);
       });
     });
   }
   selectingOptions();
 
+  function toggleModal() {
+    if (selectedImg.src === compSelectedImg.src) {
+      modalBg.style.display = "grid";
+    }
+  }
+
   // random choices for computer
   function computerChoice() {
-    const compSrc = ["images/rocks.avif", "images/paper.avif", "images/scissors.avif"];
+    const compSrc = [
+      "images/rocks.avif",
+      "images/paper.avif",
+      "images/scissors.avif",
+    ];
     const compAlt = ["rock picture", "paper picture", "scissors picture"];
     const randNum = Math.floor(Math.random() * 3);
-    const compSelectedImg = document.getElementById("compSelectedImg");
 
     compSelectedImg.src = compSrc[randNum];
     compSelectedImg.alt = compAlt[randNum];
