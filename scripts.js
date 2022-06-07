@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         setTimeout(() => {
           toggleModal();
-        }, 100);
+        }, 500);
       });
     });
   }
@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function toggleModal() {
     if (selectedImg.alt === compSelectedImg.alt) {
       modalBg.style.display = "grid";
+      resultsMessage.innerText = "You Won!";
     } else {
       modalBg.style.display = "grid";
       resultsMessage.innerText = "You Lost!";

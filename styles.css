@@ -49,6 +49,10 @@ body {
   cursor: pointer;
 }
 
+#replayBtn:hover {
+  color: #00ffff;
+}
+
 /**************************************************** title */
 #mainTitle {
   font-size: 3rem;
