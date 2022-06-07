@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const optionArr = [rock, paper, scissors];
   const modalBg = document.getElementById("modalBg");
   const resultsMessage = document.getElementById("resultsMessage");
+  const replayBtn = document.getElementById("replayBtn");
 
   function selectingOptions() {
     // selects btn individually
@@ -37,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   selectingOptions();
 
   function toggleModal() {
-    if (selectedImg.src === compSelectedImg.src) {
+    if (selectedImg.alt === compSelectedImg.alt) {
       modalBg.style.display = "grid";
     } else {
       modalBg.style.display = "grid";
@@ -59,9 +60,11 @@ document.addEventListener("DOMContentLoaded", () => {
     compSelectedImg.alt = compAlt[randNum];
   }
   computerChoice();
-});
 
-// may need while loop to cont. playing
-// have model appear to show score each time
-// modal for "you win" & "you lose"
-// - can include score if wanted
+  function restartGame() {
+    replayBtn.addEventListener("click", () => {
+      modalBg.style.display = "none";
+    });
+  }
+  restartGame();
+});
