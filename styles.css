@@ -35,8 +35,8 @@ body {
   width: 50%;
   border-radius: 1rem;
   padding: 0.5rem;
-  position: fixed;
-  top: 2rem;
+  position: relative;
+  top: -16rem;
   margin: auto 5rem;
 }
 
