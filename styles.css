@@ -53,6 +53,26 @@ body {
   color: #00ffff;
 }
 
+@media (min-width: 600px) {
+  #modalInfo {
+    width: 20rem;
+  }
+
+  #modalInfo p {
+    font-size: 4rem;
+  }
+
+  #replayBtn {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 1250px) {
+  #modalInfo {
+    top: -10rem;
+  }
+}
+
 /**************************************************** title */
 #mainTitle {
   font-size: 3rem;
